@@ -1,0 +1,1 @@
+{"model": "Wav2Vec2", "num_epochs": 19, "lr": 5e-05, "batch_size": 8, "eval_iterations": 5, "acc_scores": [0.185, 0.27, 0.285, 0.335, 0.26], "mean_acc": 0.267, "var_acc": 0.0023460000000000004}

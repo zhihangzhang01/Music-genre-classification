@@ -1,0 +1,14 @@
+torch
+torchvision
+torchaudio
+scikit-learn    
+pyyaml        
+numpy      
+tqdm
+pandas      
+matplotlib
+jupyter
+ipykernel
+ruamel.yaml
+transformers
+pillow

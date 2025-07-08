@@ -1,0 +1,45 @@
+default: &DEFAULT
+  num_epochs: 1000
+  batch_size: 32
+
+MLP:
+  <<: *DEFAULT
+  model_name: mlp
+  data_dir: "Data" # https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification
+  checkpoint_dir: "checkpoints/mlp"
+  log_dir: 'logs/mlp'
+  dataset_class: "TabularGTZANDataset"
+  apply_normalization: True
+  gpu_vis_dev: '0'
+  num_epochs: 500
+  batch_size: 16
+  lr: 0.0001
+  weight_decay: 0.00001
+
+CNN:
+  <<: *DEFAULT
+  model_name: cnn
+  data_dir: "Data\\images_cropped"
+  checkpoint_dir: "checkpoints/cnn"
+  log_dir: 'logs/cnn'
+  dataset_class: "ImageGTZANDataset"
+  transform: True
+  gpu_vis_dev: '0'
+  num_epochs: 25
+  batch_size: 16
+  lr: 0.0001
+  weight_decay: 0.00001
+
+Wav2Vec2:
+  <<: *DEFAULT
+  model_name: wav2vec2
+  data_dir: "Data\\genres_original"
+  checkpoint_dir: "checkpoints/wav2vec2"
+  log_dir: 'logs/wav2vec2'
+  dataset_class: "Wav2Vec2Dataset"
+  sample_rate: 16000
+  gpu_vis_dev: '0'
+  num_epochs: 20
+  batch_size: 8
+  lr: 0.00005
+  weight_decay: 0.00001

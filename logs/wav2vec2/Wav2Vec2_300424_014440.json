@@ -1,0 +1,1 @@
+{"model": "Wav2Vec2", "train_losses": [2.298448860645294], "train_accs": [0.10485133020344288], "val_losses": [2.308535623550415], "val_accs": [0.0875], "best_val_epoch": 1, "lr": 3e-05, "batch_size": 32}

@@ -1,0 +1,1 @@
+{"model": "MLP", "train_losses": [2.302745997905731], "train_accs": [0.10134501094776353], "val_losses": [2.302309498786926], "val_accs": [0.10137672090112641], "best_val_epoch": 1, "lr": 5e-05, "batch_size": 32}
