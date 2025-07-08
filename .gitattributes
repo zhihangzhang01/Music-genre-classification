@@ -1,3 +1,4 @@
 *.h5 filter=lfs diff=lfs merge=lfs -text
 *.pt filter=lfs diff=lfs merge=lfs -text
 *.pkl filter=lfs diff=lfs merge=lfs -text
+checkpoints/wav2vec2/* filter=lfs diff=lfs merge=lfs -text
